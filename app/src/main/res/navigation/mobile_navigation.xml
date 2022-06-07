@@ -18,8 +18,14 @@
         tools:layout="@layout/fragment_film_list" >
         <action
             android:id="@+id/action_filmListFragment_to_filmDetailFragment"
-            app:destination="@id/FilmDetailFragment" />
+            app:destination="@id/nav_film_detail" />
     </fragment>
+
+    <fragment
+        android:id="@+id/nav_film_detail"
+        android:name="com.helehpro.ghibli.ui.film.FilmDetailFragment"
+        android:label="Film"
+        tools:layout="@layout/fragment_film_detail" />
 
     <fragment
         android:id="@+id/nav_slideshow"
