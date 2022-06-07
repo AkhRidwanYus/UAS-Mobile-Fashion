@@ -6,7 +6,4 @@ data class Location(
     val climate: String,
     val terrain: String,
     val surface_water: String,
-    val residents: List<String>,
-    val films: List<String>,
-    val url: String,
 )
