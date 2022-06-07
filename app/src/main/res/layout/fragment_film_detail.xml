@@ -8,7 +8,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.helehpro.ghibli.ui.film.FilmDetailFragment" />
+            type="com.helehpro.ghibli.ui.film.FilmViewModel" />
     </data>
 
     <ScrollView
