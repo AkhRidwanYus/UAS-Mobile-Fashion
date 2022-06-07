@@ -24,4 +24,5 @@
     <string name="location_list">Location List</string>
     <string name="species_list">Species List</string>
     <string name="climate">Climate: </string>
+    <string name="ghibli">Ghibli</string>
 </resources>
