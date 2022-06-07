@@ -5,5 +5,5 @@ data class Location(
     val name: String,
     val climate: String,
     val terrain: String,
-    val surface_water: String,
+    val surface_water: String
 )

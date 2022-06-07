@@ -14,7 +14,7 @@
     <fragment
         android:id="@+id/nav_film_list"
         android:name="com.helehpro.ghibli.ui.film.FilmListFragment"
-        android:label="Film"
+        android:label="Film List"
         tools:layout="@layout/fragment_film_list" >
         <action
             android:id="@+id/action_filmListFragment_to_filmDetailFragment"
@@ -25,16 +25,38 @@
         android:id="@+id/nav_film_detail"
         android:name="com.helehpro.ghibli.ui.film.FilmDetailFragment"
         android:label="Film"
-        tools:layout="@layout/fragment_film_detail" />
+        tools:layout="@layout/fragment_species_detail" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.helehpro.ghibli.ui.location.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_species_list"
+        android:name="com.helehpro.ghibli.ui.species.SpeciesListFragment"
+        android:label="Species List"
+        tools:layout="@layout/fragment_species_list" >
+        <action
+            android:id="@+id/action_speciesListFragment_to_speciesDetailFragment"
+            app:destination="@id/nav_species_detail" />
+    </fragment>
 
     <fragment
-        android:id="@+id/ghibliListFragment"
-        android:name="com.helehpro.ghibli.ui.film.FilmListFragment"
-        android:label="Ghibli Movie List" />
+        android:id="@+id/nav_species_detail"
+        android:name="com.helehpro.ghibli.ui.species.SpeciesListFragment"
+        android:label="Species"
+        tools:layout="@layout/fragment_species_detail" />
+
+    <fragment
+        android:id="@+id/nav_location_list"
+        android:name="com.helehpro.ghibli.ui.location.LocationListFragment"
+        android:label="Film"
+        tools:layout="@layout/fragment_location_list" >
+        <action
+            android:id="@+id/action_locationListFragment_to_locationDetailFragment"
+            app:destination="@id/nav_location_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_location_detail"
+        android:name="com.helehpro.ghibli.ui.location.LocationDetailFragment"
+        android:label="Film"
+        tools:layout="@layout/fragment_location_detail" />
+
 </navigation>

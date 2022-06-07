@@ -26,7 +26,7 @@ class SpeciesListFragment: Fragment() {
         binding.recyclerView.adapter = SpeciesListAdapter(SpeciesListener{
             film -> viewModel.onSpeciesCliked(film)
             findNavController()
-                .navigate(R.id.action_filmListFragment_to_filmDetailFragment)
+                .navigate(R.id.action_speciesListFragment_to_speciesDetailFragment)
         })
         return binding.root
     }

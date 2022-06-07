@@ -24,21 +24,6 @@ class LocationDetailFragment : Fragment() {
         val binding = FragmentLocationDetailBinding.inflate(inflater)
         binding.lifecycleOwner = this
         binding.viewModel = viewModel
-
-        (activity as AppCompatActivity).supportActionBar?.title = viewModel.places.value?.name
         return binding.root
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setHasOptionsMenu(true)
-
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            android.R.id.home -> findNavController().navigate(R.id.action_amphibianListFragment_to_amphibianDetailFragment)
-        }
-        return true
     }
 }

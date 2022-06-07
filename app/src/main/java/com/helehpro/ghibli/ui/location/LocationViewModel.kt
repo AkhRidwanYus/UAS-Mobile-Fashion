@@ -21,11 +21,6 @@ class LocationViewModel : ViewModel() {
     private val _places = MutableLiveData<Location>()
     val places: LiveData<Location> = _places
 
-
-    fun listToString(list: List<Int>): String {
-        return list.joinToString("\n")
-    }
-
     fun getLocationList() {
         viewModelScope.launch {
             _status.value = LocationApiStatus.LOADING
@@ -33,7 +28,7 @@ class LocationViewModel : ViewModel() {
                 _location.value = GhibliApi.retrofitService.getLocation()
                 _status.value = LocationApiStatus.DONE
             } catch (e: Exception) {
-                _location.value = listOf()
+                e.printStackTrace()
                 _status.value = LocationApiStatus.ERROR
             }
         }

@@ -20,4 +20,8 @@
     <string name="klasifikasi">Clasification: </string>
     <string name="warna_mata">Eyes Color:</string>
     <string name="hair_colors">Hair Color:</string>
+    <string name="film_list">Film List</string>
+    <string name="location_list">Location List</string>
+    <string name="species_list">Species List</string>
+    <string name="climate">Climate: </string>
 </resources>

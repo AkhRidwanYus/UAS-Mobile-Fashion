@@ -40,11 +40,11 @@ class FilmListAdapter(val clickListener: FilmListener) :
     }
 
     override fun onBindViewHolder(holder: FilmViewHolder, position: Int) {
-        val ghibli = getItem(position)
-        holder.bind(clickListener, ghibli)
+        val film = getItem(position)
+        holder.bind(clickListener, film)
     }
 }
 
-class FilmListener(val clickListener: (ghibi: Film) -> Unit) {
-    fun onClick(ghibi: Film) = clickListener(ghibi)
+class FilmListener(val clickListener: (film: Film) -> Unit) {
+    fun onClick(film: Film) = clickListener(film)
 }

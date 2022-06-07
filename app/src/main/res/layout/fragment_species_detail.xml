@@ -20,16 +20,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <ImageView
-                android:id="@+id/banner"
-                android:layout_width="186dp"
-                android:layout_height="236dp"
-                android:layout_marginTop="18dp"
-                app:imageUrl="@{viewModel.species.image}"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/logo" />
+<!--            <ImageView-->
+<!--                android:id="@+id/banner"-->
+<!--                android:layout_width="186dp"-->
+<!--                android:layout_height="236dp"-->
+<!--                android:layout_marginTop="18dp"-->
+<!--                app:imageUrl="@{viewModel.species.image}"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:srcCompat="@drawable/logo" />-->
 
             <TextView
                 android:id="@+id/title"
@@ -41,7 +41,7 @@
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Headline2"
                 android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/banner"
+                app:layout_constraintTop_toTopOf="parent"
                 tools:text="Castle in the Sky" />
 
             <View
@@ -58,7 +58,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="8dp"
-                android:text="@{viewModel.species.clasification}"
+                android:text="@{viewModel.species.classification}"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
                 app:layout_constraintStart_toEndOf="@id/original_title_label"
                 app:layout_constraintTop_toBottomOf="@id/view"

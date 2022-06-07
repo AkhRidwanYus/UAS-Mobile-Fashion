@@ -30,7 +30,7 @@ class LocationListFragment : Fragment(){
         binding.recyclerView.adapter = LocationListAdapter(LocationListener { pants ->
             viewModel.onLocationClicked(pants)
             findNavController()
-                .navigate(R.id.action_amphibianListFragment_to_amphibianDetailFragment)
+                .navigate(R.id.action_locationListFragment_to_locationDetailFragment)
         })
 
         return binding.root

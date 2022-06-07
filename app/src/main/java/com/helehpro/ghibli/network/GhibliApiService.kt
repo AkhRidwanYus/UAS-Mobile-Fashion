@@ -17,10 +17,10 @@ interface  GhibliApiService {
     @GET("films")
     suspend fun getFilm(): List<Film>
 
-    @GET("location")
+    @GET("locations")
     suspend fun getLocation(): List<Location>
 
-    @GET("films")
+    @GET("species")
     suspend fun getSpecies(): List<Species>
 }
 

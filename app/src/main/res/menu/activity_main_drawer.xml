@@ -11,10 +11,14 @@
         <item
             android:id="@+id/nav_film_list"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/list_film" />
+            android:title="@string/film_list" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/nav_location_list"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/location_list" />
+        <item
+            android:id="@+id/nav_species_list"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/species_list" />
     </group>
 </menu>

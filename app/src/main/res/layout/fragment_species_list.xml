@@ -23,7 +23,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:listitem="@layout/specieses"
-            listSpeciesData="@{viewModel.species}"/>
+            listSpeciesData="@{viewModel.specieses}"/>
 
         <ImageView
             android:id="@+id/status_image"

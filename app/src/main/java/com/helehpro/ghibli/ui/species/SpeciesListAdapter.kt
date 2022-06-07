@@ -30,7 +30,7 @@ class SpeciesListAdapter(val clickListener: SpeciesListener) :
         }
 
         override fun areContentsTheSame(oldItem: Species, newItem: Species): Boolean {
-            return oldItem.clasification == newItem.clasification
+            return oldItem.classification == newItem.classification
         }
 
     }
@@ -42,11 +42,11 @@ class SpeciesListAdapter(val clickListener: SpeciesListener) :
     }
 
     override fun onBindViewHolder(holder: SpeciesViewHolder, position: Int) {
-        val ghibli = getItem(position)
-        holder.bind(clickListener, ghibli)
+        val species = getItem(position)
+        holder.bind(clickListener, species)
     }
 }
 
-class SpeciesListener(val clickListener: (ghibi: Species) -> Unit) {
-    fun onClick(ghibi: Species) = clickListener(ghibi)
+class SpeciesListener(val clickListener: (species: Species) -> Unit) {
+    fun onClick(species: Species) = clickListener(species)
 }

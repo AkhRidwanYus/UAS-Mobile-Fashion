@@ -5,11 +5,11 @@
 
     <data>
         <variable
-            name="species"
-            type="com.helehpro.ghibli.network.Species" />
+            name="location"
+            type="com.helehpro.ghibli.network.Location" />
         <variable
             name="clickListener"
-            type="com.helehpro.ghibli.ui.species.SpeciesListener" />
+            type="com.helehpro.ghibli.ui.location.LocationListener" />
     </data>
 
     <com.google.android.material.card.MaterialCardView
@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:onClick="@{() -> clickListener.onClick(species)}"
+        android:onClick="@{() -> clickListener.onClick(location)}"
         app:cardCornerRadius="4dp"
         app:cardElevation="4dp">
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -28,7 +28,7 @@
 <!--                android:layout_width="130dp"-->
 <!--                android:layout_height="200dp"-->
 <!--                android:layout_marginHorizontal="5dp"-->
-<!--                app:imageUrl="@{species.image}"-->
+<!--                app:imageUrl="@{location.image}"-->
 <!--                tools:srcCompat="@drawable/logo"-->
 <!--                app:layout_constraintStart_toStartOf="parent"-->
 <!--                app:layout_constraintTop_toTopOf="parent" />-->
@@ -42,7 +42,7 @@
                 android:ellipsize="end"
                 android:maxLines="2"
                 android:padding="8dp"
-                android:text="@{species.name}"
+                android:text="@{location.name}"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textStyle="bold"
                 android:textSize="17sp"
@@ -59,7 +59,7 @@
                 android:ellipsize="end"
                 android:maxLines="2"
                 android:padding="8dp"
-                android:text="@{species.classification}"
+                android:text="@{location.climate}"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textSize="14sp"
                 app:layout_constraintStart_toEndOf="@id/release_date_label"
@@ -75,7 +75,7 @@
                 android:ellipsize="end"
                 android:maxLines="2"
                 android:padding="8dp"
-                android:text="@string/klasifikasi"
+                android:text="@string/climate"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textSize="14sp"
                 app:layout_constraintStart_toStartOf="parent"

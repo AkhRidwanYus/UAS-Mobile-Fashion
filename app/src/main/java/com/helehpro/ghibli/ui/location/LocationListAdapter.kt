@@ -6,13 +6,13 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.ListAdapter
 import com.helehpro.ghibli.network.Location
-import com.helehpro.ghibli.databinding.ListViewItemBinding
+import com.helehpro.ghibli.databinding.LocationsBinding
 
 class LocationListAdapter(private val clickListener: LocationListener) :
     ListAdapter<Location, LocationListAdapter.LocationViewHolder>(DiffCallback)
 {
     class LocationViewHolder(
-        var binding: ListViewItemBinding
+        var binding: LocationsBinding
     ) : RecyclerView.ViewHolder(binding.root){
         fun bind(clickListener: LocationListener, location: Location){
             binding.location = location
@@ -35,7 +35,7 @@ class LocationListAdapter(private val clickListener: LocationListener) :
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) : LocationViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         return LocationViewHolder(
-            ListViewItemBinding.inflate(layoutInflater, parent, false)
+            LocationsBinding.inflate(layoutInflater, parent, false)
         )
     }
 
