@@ -17,9 +17,9 @@ interface  GhibliApiService {
     @GET("films")
     suspend fun getFilm(): List<Film>
 
-//    pilih ja sisanya... hnyar sesuaikan
-//    @GET("films")
-//    suspend fun getGhibli(): List<Film>
+    @GET("location")
+    suspend fun getLocation(): List<Location>
+
 //    @GET("films")
 //    suspend fun getGhibli(): List<Film>
 }
