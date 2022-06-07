@@ -17,7 +17,7 @@ fun bindRecyclerView(recyclerView: RecyclerView, data: List<Film>?) {
     adapter.submitList(data)
 }
 
-@BindingAdapter("apiStatus")
+@BindingAdapter("apiFilmStatus")
 fun bindStatus(statusImageView: ImageView, status: FilmApiStatus?) {
     when(status){
         FilmApiStatus.LOADING -> {

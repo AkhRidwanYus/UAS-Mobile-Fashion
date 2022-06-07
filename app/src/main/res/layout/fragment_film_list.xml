@@ -7,7 +7,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.helehpro.ghiblioutdated.ui.GhibliViewModel" />
+            type="com.helehpro.ghibli.ui.film.FilmViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -23,7 +23,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:listitem="@layout/films"
-            listData="@{viewModel.ghiblis}"/>
+            listData="@{viewModel.films}"/>
 
         <ImageView
             android:id="@+id/status_image"

@@ -17,4 +17,5 @@
     <string name="release_date">Release Date:</string>
     <string name="rate_score">Rate Score:</string>
     <string name="description">Description:</string>
+    <string name="list_film">List Film</string>
 </resources>

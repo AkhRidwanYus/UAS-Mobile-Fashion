@@ -25,7 +25,7 @@ class FilmListFragment: Fragment() {
         binding.recyclerView.adapter = FilmListAdapter(FilmListener{
             film -> viewModel.onFilmCliked(film)
             findNavController()
-                .navigate(R.id.action_ghibliListFragment_to_ghibliDetailFragment)
+                .navigate(R.id.action_filmListFragment_to_filmDetailFragment)
         })
         return binding.root
     }

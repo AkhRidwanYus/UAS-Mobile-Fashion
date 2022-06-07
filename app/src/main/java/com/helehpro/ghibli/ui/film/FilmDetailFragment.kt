@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import com.helehpro.ghibli.databinding.FragmentFilmDetailBinding
 
-g
 
 class FilmDetailFragment : Fragment() {
     private val viewModel: FilmViewModel by activityViewModels()
