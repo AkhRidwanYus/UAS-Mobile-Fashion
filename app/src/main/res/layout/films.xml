@@ -28,7 +28,7 @@
                 android:layout_width="130dp"
                 android:layout_height="200dp"
                 android:layout_marginHorizontal="5dp"
-                app:imageUrl="@{ghibli.image}"
+                app:imageUrl="@{film.image}"
                 tools:srcCompat="@drawable/logo"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -41,7 +41,7 @@
                 android:ellipsize="end"
                 android:maxLines="2"
                 android:padding="8dp"
-                android:text="@{ghibli.title}"
+                android:text="@{film.title}"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textStyle="bold"
                 android:textSize="17sp"
