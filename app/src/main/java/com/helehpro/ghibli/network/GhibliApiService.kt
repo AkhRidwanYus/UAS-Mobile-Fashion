@@ -20,8 +20,8 @@ interface  GhibliApiService {
     @GET("location")
     suspend fun getLocation(): List<Location>
 
-//    @GET("films")
-//    suspend fun getGhibli(): List<Film>
+    @GET("films")
+    suspend fun getSpecies(): List<Species>
 }
 
 object GhibliApi{

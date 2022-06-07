@@ -16,5 +16,8 @@
     <string name="producer">Producer:</string>
     <string name="release_date">Release Date:</string>
     <string name="rate_score">Rate Score:</string>
-    <string name="description">Description:</string>
+    <string name="description">Description: </string>
+    <string name="klasifikasi">Clasification: </string>
+    <string name="warna_mata">Eyes Color:</string>
+    <string name="hair_colors">Hair Color:</string>
 </resources>
