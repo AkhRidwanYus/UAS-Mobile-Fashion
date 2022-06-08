@@ -7,7 +7,7 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:title="@string/home" />
         <item
             android:id="@+id/nav_film_list"
             android:icon="@drawable/ic_menu_gallery"
@@ -15,10 +15,10 @@
         <item
             android:id="@+id/nav_location_list"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/location_list" />
+            android:title="@string/location" />
         <item
             android:id="@+id/nav_species_list"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/species_list" />
+            android:title="@string/species" />
     </group>
 </menu>
